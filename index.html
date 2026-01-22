@@ -5,160 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        header{
-            font-family: cursive;
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-    main{
-        font-family: cursive;
-        #ar1{
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            background-color: rgb(240, 227, 211);
-        }
-        #ar2{
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            background-color: rgb(187, 184, 180);
-        }
-        #ar3{ 
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            background-color: rgb(202, 240, 218);
-        }
-        #ar4, #ar5, #ar6{
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            text-align: center;
-            background-color: rgb(240, 218, 202);
-        }
+        h1{
+            font-size: 60px;
 
-    }
-    footer{
-        text-align: center;
-        font-family: cursive;
-    }
+        }
+        h2{
+            font-size: 30px;
+        }
+        #ar1,#ar2{
+            color:rgb(206, 30, 162)
+        }
+    
+
     </style>
+        
+    
 </head>
 <body>
     <header>
-        <h1 style="color: blue; font-family: cursive ; text-align: center;">Job Portal</h1>
-        <img src="jobportalimg.avif" alt="Job Portal Image" width="200" height="150">
-        <nav>
-            <ul >
-                <li>Home</li>
-                <li>Jobs</li>
-                <li>Companies</li>
-                <li>Login</li>
-                <li>Register</li>
-            </ul>
-        </nav>
+        <h1>Palak Kapila</h1>
+        <p>Welcome to my portfolio,Full stack developer</p>
+        <img src="software.avif" alt="Software image" height="150" width="200">
     </header>
-    <main>
-        <h2 style="background-color: rgb(242, 233, 233);">Welcome to the Job Portal</h2>
-        <p style="font-family: cursive;">Your gateway to exciting career opportunities.</p>
-        <section id="job-search"><h3>Job Search</h3>
-            <form style="border: 2px solid black; padding: 10px; width: 300px;">
-                <label for="job title">Job Title:</label>
-                <select name="job title" id="job title">
-                    <option value="">Select a job title</option>
-                    <option>Software Engineer</option>
-                    <option>Product Manager</option>
-                    <option>Data Analyst</option>
-                    <option>UX Designer</option>
-                    <option>Marketing Specialist</option>
-                    <option>HR Manager</option>
-                </select>
-                <br><br>
-                <label for="location">Location:</label>
-                <input type="text" id="location" >
-                <br><br>
-                <label for="experience">Experience (years):</label>
-                <input type="number" id="experience" >
-                <br><br>
-                <button type="submit">Search Jobs</button>
+    <hr>
+    <nav>
+        <a href="github.com">GITHUB</a> |
+        <a href="leetcode.in">Leetcode</a> |
+        <a href="linkedin.com">LinkedIn</a>
+    </nav>
+    <hr>
+    <section>
+        <h2>Projects</h2>
+        <article id="ar1">
+            <h3>Project 1: E-commerce Website <a href="#github">GITHUB</a></h3>
+            <p>A full-featured e-commerce website built with React and Node.js, featuring user authentication, product listings, and a shopping cart.</p>
+            
+        </article>
+        <article id="ar2">
+            <h3>Project 2: Chat Application <a href="#github">GITHUB</a></h3>
+            <p>A real-time chat application using Socket.io and Express.js, allowing users to join chat rooms and send messages instantly.</p>
+            
+    </section>
+    <hr>
+    <section>
+        <h2>Skills</h2>
+        <ol type="I">
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h2>Education</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Specialization</th>
+                    <th>Passing Year</th>
+                    <th>Institution</th>
+                    <th>Grades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>Computer Science</td>
+                    <td>2028</td>
+                    <td>Chandigarh University</td>
+                    <td>9 CGPA</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Science</td>
+                    <td>2024</td>
+                    <td>ABC School</td>
+                    <td>95%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="username" required placeholder="Name"> <br>
+            <br>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" required placeholder="email"> <br>
+            <br>
+            <label for="reason">Enter your reason</label>
+            <select id="reason" >
+                <option value="">select an option</option>
+            <option value="job">Job</option>
+            <option value="freelance">Freelance</option>
+            <option value="Training">Training</option> </select>
+            <br>
+            <br>
+            <label for="feedback">Enter your feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+            <br>
+            
+        </form>
+    </section>
 
-            </form> 
-        </section>
-        <section id="Popular job Categories"><h3>Popular Job Categories</h3>
-            <p>Explore popular job categories:</p>
-            <ul>
-                <li>Software Engineering</li>
-                <li>Marketing</li>
-                <li>Design</li>
-                <li>Data Science</li>
-                <li>Human Resources</li>
-                <li>Product Management</li>
-            </ul>
-        </section>
-        <section id="featured-jobs"><h3>Featured Jobs</h3>
-            <article id=ar1>
-                <h4>Software Engineer at TechCorp</h4>
-                <p>Location: New York, NY</p>
-                <p>Experience: 3+ years</p>
-                <button>Apply Now</button>
-            </article>
-            <article id="ar2">
-                <h4>Marketing Specialist at MarketMinds</h4>
-                <p>Location: San Francisco, CA</p>
-                <p>Experience: 2+ years</p>
-                <button>Apply Now</button>
-            </article>
-            <article id="ar3">
-                <h4>Data Analyst at DataPros</h4>
-                <p>Location: Chicago, IL</p>
-                <p>Experience: 4+ years</p>
-                <button>Apply Now</button>
-            </article>
-        </section>
-        <section id="Top Companies"><h3>Top Companies</h3>
-            <article id="ar4">
-                <h4>TechCorp</h4>
-                <img src="techcorp.jpeg" alt="TechCorp Logo" width="100" height="50">
-                <p>Industry: Technology</p>
-                <p>Location: New York, NY</p>
-            </article>
-            <article id="ar5">
-                <h4>MarketMinds</h4>
-                <img src="marketminds.png" alt="MarketMinds Logo" width="100" height="50">
-                <p>Industry: Marketing</p>
-                <p>Location: San Francisco, CA</p>
-            </article>
-            <article id="ar6">
-                <h4>DataPros</h4>
-                <img src="datapro.png" alt="DataPros Logo" width="100" height="50">
-                <p>Industry: Data Science</p>
-                <p>Location: Chicago, IL</p>
-        </section>
-        <section id="why choose us"><h3>Why Choose Us</h3>
-            <p>Our platform offers the best job matching experience with personalized recommendations and a user-friendly interface.</p>
-            <ul>
-                <li>Personalized job recommendations</li>
-                <li>User-friendly interface</li>
-                <li>Comprehensive company profiles</li>
-                <li>Real-time job updates</li>
-            </ul>
-        </section>
-        <section id="call to action"><h3>Call to Action</h3>
-            <p>Ready to take the next step in your career? Sign up now and start exploring thousands of job opportunities!</p>
-            <button>Sign Up</button>
-
-    </main>
-    <footer>
-        <p>&copy; 2026 Job Portal. All rights reserved.</p>
-    </footer>
-    
 </body>
 </html>
