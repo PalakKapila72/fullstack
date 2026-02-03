@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#1f3c88;
+    color:white;
+}
+
+header h1{
+    font-family:cursive;
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+nav ul li:hover{
+    text-decoration:underline;
+}
+
+.img img{
+    border-radius:10px;
+}
+
+main{
+    padding:30px;
+    background:#f5f7fb;
+}
+
+main h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+main p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#job-search form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:320px;
+    margin-bottom:30px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+#job-search label{
+    font-weight:bold;
+}
+
+#job-search input,
+#job-search select,
+#job-search button{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+#job-search button{
+    background:#1f3c88;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+#job-search button:hover{
+    background:#162d66;
+}
+
+section{
+    margin-bottom:40px;
+}
+
+section h3{
+    margin-bottom:10px;
+    color:#1f3c88;
+}
+
+#featured-jobs{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+article{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    width:280px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+article h4{
+    margin-bottom:10px;
+}
+
+article button{
+    margin-top:10px;
+    padding:8px;
+    width:100%;
+    background:#28a745;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+article button:hover{
+    background:#1e7e34;
+}
+
+#Top\ Companies{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#Top\ Companies article{
+    text-align:center;
+}
+
+footer{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Job Portal</h1>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Jobs</li>
+            <li>Companies</li>
+            <li>Login</li>
+            <li>Register</li>
+        </ul>
+    </nav>
+
+    <div class="img">
+        <img src="jobportalimg.avif" alt="Job Portal" width="120">
+    </div>
+</header>
+
+<main>
+    <h2>Welcome to the Job Portal</h2>
+    <p>Your gateway to exciting career opportunities</p>
+
+    <section id="job-search">
+        <h3>Job Search</h3>
+        <form>
+            <label>Job Title</label>
+            <select>
+                <option>Select a job title</option>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>Data Analyst</option>
+            </select><br><br>
+
+            <label>Location</label>
+            <input type="text"><br><br>
+
+            <label>Experience (years)</label>
+            <input type="number"><br><br>
+
+            <button>Search Jobs</button>
+        </form>
+    </section>
+
+    <section id="featured-jobs">
+        <h3>Featured Jobs</h3>
+
+        <article>
+            <h4>Software Engineer</h4>
+            <p>New York • 3+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+        <article>
+            <h4>Marketing Specialist</h4>
+            <p>San Francisco • 2+ years</p>
+            <button>Apply Now</button>
+        </article>
+
+        <article>
+            <h4>Data Analyst</h4>
+            <p>Chicago • 4+ years</p>
+            <button>Apply Now</button>
+        </article>
+    </section>
+
+    <section id="Top Companies">
+        <h3>Top Companies</h3>
+
+        <article>
+            <h4>TechCorp</h4>
+            <img src="techcorp.jpeg" width="100">
+            <p>Technology • NY</p>
+        </article>
+
+        <article>
+            <h4>MarketMinds</h4>
+            <img src="marketminds.png" width="100">
+            <p>Marketing • SF</p>
+        </article>
+
+        <article>
+            <h4>DataPros</h4>
+            <img src="datapro.png" width="100">
+            <p>Data Science • Chicago</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Job Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
